@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="main">
+    <h1 class="h2 title text-center">{{ post.title }}</h1>
+    <p><small>{{ post.date_created|date:"d F Y" }}</small></p>
+    <div class="card-text">{{ post.text|safe }}</div>
+</div>
+{% endblock %}

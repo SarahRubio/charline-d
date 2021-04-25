@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="main">
+    <div class="mb-5">
+        <h2 class="title">Présentation de Charline DUCHADEAU</h2>
+        <div class="row justify-content-space-around align-items-center">
+            <div class="col-md-7">
+                <p>Avocat depuis 2016, Charline DUCHADEAU a débuté sa carrière en collaborant dans plusieurs cabinets d’Avocats d’affaires à Bordeaux.</p>
+                <p>Constamment à la recherche de nouveaux défis, Charline DUCHADEAU enseigne également le droit des contrats et la procédure civile à <a class="text-reset" href="https://droit.u-bordeaux.fr/La-Faculte/Equipe-pedagogique/Duchadeau-Charline">l’université de Bordeaux</a>.</p> 
+                <p>Elle est titulaire d’un Master 2 en droit privé, d’un certificat de compétence du CNAM en droit des affaires ainsi que d’un master II de <a class="text-reset" href="https://www.kedgebs-alumni.com/fr/diplome/annuaire/recherche">l’école de commerce KEDGE</a>.</p>
+                <p>Originaire de la Charente, Charline DUCHADEAU a son cabinet basé à Bordeaux mais est susceptible d’intervenir sur toute la France et notamment dans l’ensemble de la région nouvelle Aquitaine.</p>     
+            </div>
+            <div class="col-md-5">
+                <a href="../../static/images/cv-charline-duchadeau.pdf"><img src="../../static/images/charline-duchadeau-1.jpg" alt="Me Charline Duchadeau"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5 pt-5">
+        <h2 class="title">Lieux d’intervention</h2>
+        <div class="">
+            <p>Nous adoptons une démarche juridique pragmatique, concrète afin de répondre efficacement à vos interrogations.</p> 
+            <p>Nous rédigeons les actes nécessaires à votre activité.</p>
+            <p>En cas de litige, nous intervenons pour défendre vos intérêts, en demande comme en défense. Nous vous représentons devant toutes les juridictions civiles sur tout le territoire national, en première instance et en appel, en référé comme au fond : soit devant l’ensemble des pôles et juges rattachés aux Tribunaux Judiciaires, les Tribunaux de Commerce, les Cours d’appel.</p>  
+        </div>
+    </div>
+
+    <div id="values" class="mb-5 pt-5">
+        <h2 class="title">Les valeurs du cabinet</h2>
+        <div class="row flex-wrap">
+            <div class="flip-card col-md-6">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front bg-darker">
+                        <p><i class="fas fa-stopwatch"></i>Réactivité</p>
+                    </div>
+                    <div class="flip-card-back bg-ligther">
+                        <p>Un accompagnement efficace et rapide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card col-md-6">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p><i class="fas fa-glasses"></i>Écoute</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Confidentialité totale et compréhension de vos besoins</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card col-md-6">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p><i class="fas fa-chess"></i>Savoir-faire</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Compétences et expertise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card col-md-6">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front bg-darker">
+                        <p><i class="far fa-handshake"></i>Implication</p>
+                    </div>
+                    <div class="flip-card-back bg-ligther">
+                        <p>Diligences et temps nécessaire consacré à votre dossier</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5 pt-5">
+        <h2 class="title">Recommandations</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <blockquote class="blockquote d-block w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <div class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
+                  </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote d-block w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <div class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
+                  </blockquote>            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote d-block w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <div class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
+                  </blockquote>            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}

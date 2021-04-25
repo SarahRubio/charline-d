@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="main">
+
+    <div class="mb-5 pt-5">
+        <h2 class="title">Les domaines d'interventions</h2>
+        <div>
+            <p>Nous négocions et rédigeons les contrats qui vous sont nécessaires, afin de contribuer au développement et à la pérennité de votre activité.</p>
+            <p>En cas de litige, nous vous apportons notre aide pour garantir vos droits. Nous intervenons tant pour anticiper d’éventuelles situations sensibles ou désamorcer des situations de crise que pour vous assister et représenter en cas de procédure judiciaire, en privilégiant le cas échéant une transaction amiable du litige. </p>
+            <p>Après une analyse précise de votre dossier, nous définissons en lien étroit avec vous la stratégie de défense la plus adaptée.</p>
+            <p>Nous intervenons en conseil comme en contentieux dans ces domaines d’intervention.</p>
+        </div>
+    </div>
+
+    <div class="mb-5 pt-5">
+        <h2 class="title">Nos compétences</h2>
+        <div class="row flex-wrap mb-5 pt-5">
+            {% for competence in competences %}
+            <div class="flip-card col-md-6">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front bg-darker">
+                        <p>{{ competence.name }}</p>
+                    </div>
+                    <div class="flip-card-back bg-ligther">
+                        <p class="rf-text--sm">Obtenir des informations<i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+<div class="mb-5 pt-5">
+    <h2 class="title">Nos partenaires</h2>
+    <div>
+        <p>Nous collaborons avec de nombreux partenaires et confrères afin de proposer à nos clients une gamme complète de services destinés à répondre à toutes leurs problématiques.</p>
+        <p>Nous travaillons notamment régulièrement avec :</p>
+        <ul>
+            <li><u>Maître Aurélie TESTU</u> : elle opère en droit de la propriété intellectuelle, en droit des nouvelles technologies, de l’informatique et de la communication.</li>
+            <li><u>Maître Marine GAUTREAU</u> : elle opère en droit pénal et réparation du préjudice corporel.</li>
+        </ul>
+        <p>Outre des avocats, nous comptons parmi notre réseau d’autres professionnels : experts-comptables, assureurs, notaires, contrôleurs de gestion, formateurs, etc.</p>
+        <p>Nous choisissons des partenaires ayant une compétence reconnue dans leur domaine et que partagent des valeurs similaires à celles du cabinet.</p>
+        <p>Nous sommes à votre disposition pour toute précision complémentaire sur notre offre de services. Et comme un mail ou un appel téléphonique n’engage à rien, n’hésitez pas !</p>
+    </div>
+</div>
+</div>
+{% endblock %}

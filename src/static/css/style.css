@@ -1,0 +1,337 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7 !important;
+    background: url("/static/images/texture.jpg");
+    background-size: contain;
+
+}
+
+/***************** MAIN  */
+
+.main {
+    margin: 0 10rem 0rem 10rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 400;
+    color: #d3b155;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.title:first-of-type {
+    margin-top: 0;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid #d8c38c;
+    width: 10%;
+    position: absolute;
+}
+
+/***************** HEADER */
+
+header {
+    z-index: 2;
+    box-sizing: border-box;
+    background-color: #031b2b;
+}
+
+@font-face {
+    font-family: 'signature';
+    font-style: normal;
+    font-weight: bold;
+    src: local('signature'), url('/static/fonts/autography.otf') format('opentype');
+}
+
+.main-title {
+    font-family: 'signature';
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fade-in 3000ms;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 7vh;
+    background-color: #031b2b;
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 25%);
+}
+
+nav p{
+    display: inline-block;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    border-right: solid 1px #fff;
+    color: #fff !important;
+}
+
+nav a {
+    color: #fff !important;
+}
+
+nav p:last-of-type {
+    padding-right: 0;
+    margin-right: 1rem;
+    border-right: none;
+}
+
+nav a:hover, a:focus {
+    color: #d3b155 !important;
+    text-decoration: none;
+    border-bottom: solid 3px #d3b155;
+}
+
+/* ******* FOOTER ********* */
+
+footer {
+    margin: 0;
+    min-height: 10rem;
+    padding: 3rem 5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #031b2b;
+}
+
+footer i {
+    font-size: 1.2rem;
+}
+
+#copyright {
+    border-top: solid 1px #d3b155;
+    margin: 0;
+}
+
+#contact a {
+    margin-bottom: 0.3rem;
+}
+
+#contact i {
+    margin-right: 0.7rem;
+}
+
+.fa-linkedin-square {
+    font-size: 1.7rem;
+    color: #d3b155;
+}
+
+.fa-linkedin-square:hover {
+    transform: scale(1.2);
+}
+
+/******** HOME ********/
+
+a > img {
+    max-height: 450px;
+}
+
+#logos > a {
+    text-align: center;
+}
+
+#logos > a > img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+#values > div > p + p {
+    padding-left: 2rem;
+}
+
+#values > div > div > p {
+    text-align: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    padding: 0 !important;
+    height: 150px;
+}
+
+.flip-card-inner {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 7px;
+}
+
+.flip-card-front {
+    color: #d3b155;
+    background-color: #1c212e;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.flip-card-front  p{
+    margin: 0;
+}
+
+.bg-darker {
+    background-color: #141821;
+}
+
+.bg-ligther {
+    background-color: #1c212e;
+}
+
+.flip-card-front i {
+    font-size: 1.5rem;
+    vertical-align: baseline;
+    margin-right: 1rem;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #141821;
+    color: #d3b155;
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+
+.flip-card-back i {
+    vertical-align: baseline;
+    margin-left: 1rem;
+}
+
+.competences > div > div > h2 > i {
+    color: #2f55b6;
+    margin-right: 2rem;
+}
+
+.competences > div > div > h2 {
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 7px;
+}
+
+.competence {
+    position: relative;
+    background-color: #f9f8f6;
+    padding: 32px 32px 24px 32px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.competence:hover {
+    box-shadow: inset 0 0 0 2px#2f55b6;
+}
+
+/********************* CONTACT  */
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;>
+    height:0;
+}
+    
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/********************** POST  */
+
+.post {
+    border: solid 1px #d3b155;
+    box-shadow: 0px 5px 9px 3px rgb(0 0 0 / 10%);
+}
+
+.post h2 {
+    color: #d3b155;
+}
+
+.post small {
+    color: grey !important;
+}
+
+.link {
+    border: solid 1px #d3b155;
+    cursor: pointer;
+}
+
+.link a, .link i {
+    color: #141821 !important;
+}
+
+.link:hover a,
+.link:hover i {
+    color: #fff !important;
+}
+
+.link:hover {
+    border: solid 1px #141821;
+    background-color: #141821;
+    color: #d3b155 !important;
+    cursor: pointer;
+}
