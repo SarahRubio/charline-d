@@ -1,9 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7 !important;
-    background: url("/static/images/texture.jpg");
-    background-size: contain;
-
 }
 
 /***************** MAIN  */
@@ -47,7 +44,7 @@ body {
 header {
     z-index: 2;
     box-sizing: border-box;
-    background-color: #031b2b;
+    background-color: #6fa0cb;
 }
 
 @font-face {
@@ -91,7 +88,7 @@ nav {
     top: 0;
     z-index: 10;
     height: 7vh;
-    background-color: #031b2b;
+    background-color: #6fa0cb;
     box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 25%);
 }
 
@@ -128,7 +125,7 @@ footer {
     padding: 3rem 5rem;
     color: #fff;
     text-align: center;
-    background-color: #031b2b;
+    background-color: #6fa0cb;
 }
 
 footer i {
@@ -216,7 +213,7 @@ a > img {
 
 .flip-card-front {
     color: #d3b155;
-    background-color: #1c212e;
+    background-color: #e9eaea ;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
@@ -226,11 +223,11 @@ a > img {
 }
 
 .bg-darker {
-    background-color: #141821;
+    background-color: #e9eaea;
 }
 
 .bg-ligther {
-    background-color: #1c212e;
+    background-color: #e9eaea;
 }
 
 .flip-card-front i {
@@ -241,7 +238,7 @@ a > img {
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background-color: #141821;
+    background-color: #e9eaea;
     color: #d3b155;
     text-transform: uppercase;
     padding: 0 3rem;
@@ -334,4 +331,15 @@ a > img {
     background-color: #141821;
     color: #d3b155 !important;
     cursor: pointer;
+}
+
+#second-link {
+    color: #d3b155 !important;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+#second-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
