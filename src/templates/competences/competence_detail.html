@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="main">
+    <h1 class="h2 title text-center">{{ competence.name }}</h1>
+    <div class="card-text">{{ competence.description|safe }}</div>
+</div>
+{% endblock %}

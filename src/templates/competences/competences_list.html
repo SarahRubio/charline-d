@@ -23,7 +23,7 @@
                         <p>{{ competence.name }}</p>
                     </div>
                     <div class="flip-card-back bg-ligther">
-                        <p class="rf-text--sm">Obtenir des informations<i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+                        <p class="rf-text--sm"><a class="text-reset card-link" href="{% url 'competence-detail' slug=competence.slug %}">Obtenir des informations<i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
             </div>
