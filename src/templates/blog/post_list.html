@@ -3,19 +3,19 @@
 {% block main %}
 <div class="main">
     <h1 class="h2 title text-center">NOS ACTUALITÉS</h1>
-        <div class="row justify-content-around">
-            {% for post in posts %}
-            <div class="post my-4 p-5 card">
-                <div class="card-body">
-                    <h2>{{ post.title }}</h2>
-                    <p><small>{{ post.date_created|date:"d F Y" }}</small></p>
-                    <div class="card-text">{{ post.text|truncatechars:250|safe }}</div>
-                    <p class="mt-5">
-                        <span class="link p-3"><a class="text-reset card-link" href="{% url 'article-blog' slug=post.slug %}">Lire la suite</a><i class="fas fa-arrow-right ml-2"></i></span>
-                    </p>
-                </div>
+    <div class="row justify-content-around">
+        {% for post in posts %}
+        <div class="post my-4 p-5 card">
+            <div class="card-body">
+                <h2>{{ post.title }}</h2>
+                <p><small>{{ post.date_created|date:"d F Y" }}</small></p>
+                <div class="card-text">{{ post.text|truncatechars:250|safe }}</div>
+                <p class="mt-5">
+                    <span class="link p-3"><a class="text-reset card-link" href="{% url 'article-blog' slug=post.slug %}">Lire la suite</a><i class="fas fa-arrow-right ml-2"></i></span>
+                </p>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
