@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "52e102bdcc4b80f0840ea0580ee6236d7f6b2daf952649ba079e8ce10772fd8d"
+            "sha256": "64b2a40ed0e6929d9b7188d3f1eb1f367e6045302103f46b7a9813948500961c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,19 +18,19 @@
     "default": {
         "asgiref": {
             "hashes": [
-                "sha256:7e51911ee147dd685c3c8b805c0ad0cb58d360987b56953878f8c06d2d1c6f1a",
-                "sha256:9fc6fb5d39b8af147ba40765234fa822b39818b12cc80b35ad9b0cef3a476aed"
+                "sha256:92906c611ce6c967347bbfea733f13d6313901d54dcca88195eaeb52b2a8e8ee",
+                "sha256:d1216dfbdfb63826470995d31caed36225dcaf34f182e0fa257a4dd9e86f1b78"
             ],
-            "markers": "python_version >= '3.5'",
-            "version": "==3.2.10"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.3.4"
         },
         "django": {
             "hashes": [
-                "sha256:a2127ad0150ec6966655bedf15dbbff9697cc86d61653db2da1afa506c0b04cc",
-                "sha256:c93c28ccf1d094cbd00d860e83128a39e45d2c571d3b54361713aaaf9a94cac4"
+                "sha256:a523d62b7ab2908f551dabc32b99017a86aa7784e32b761708e52be3dce6d35d",
+                "sha256:dc41bf07357f1f4810c1c555b685cb51f780b41e37892d6cc92b89789f2847e1"
             ],
             "index": "pypi",
-            "version": "==3.1.2"
+            "version": "==3.1.12"
         },
         "django-ckeditor": {
             "hashes": [
@@ -80,9 +80,11 @@
         },
         "xworkflows": {
             "hashes": [
-                "sha256:bac76b991d65cb880c671d3f577e1c949bda18bff58d6b9d692ccd2aa7792caf"
+                "sha256:8e3a9f6e9de6bcd779335f2ce4f87445ad8047771be9c6c96e347fb8622e2f27",
+                "sha256:943571904066e03946016c5710cfea97847c1931c2e07bdd61827a01bce38d80"
             ],
-            "version": "==1.0.4"
+            "markers": "python_version >= '2.7'",
+            "version": "==1.1.0"
         }
     },
     "develop": {}
