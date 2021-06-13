@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'competences.apps.CompetencesConfig',
     'contact.apps.ContactConfig',
+    'recommandations.apps.RecommandationsConfig',
     'ckeditor',
 ]
 

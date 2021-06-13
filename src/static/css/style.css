@@ -111,9 +111,8 @@ nav p:last-of-type {
 }
 
 nav a:hover, a:focus {
-    color: #d3b155 !important;
     text-decoration: none;
-    border-bottom: solid 3px #d3b155;
+    border-bottom: solid 3px #fff;
 }
 
 /* ******* FOOTER ********* */
@@ -128,11 +127,11 @@ footer {
 }
 
 footer i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #copyright {
-    border-top: solid 1px #d3b155;
+    border-top: solid 1px #fff;
     margin: 0;
 }
 
@@ -145,8 +144,8 @@ footer i {
 }
 
 .fa-linkedin-square {
-    font-size: 1.7rem;
-    color: #d3b155;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 .fa-linkedin-square:hover {
@@ -349,4 +348,60 @@ a > img {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+#blockquote span {
+    margin: 0 4rem;
+}
+
+#blockquote span:first-of-type {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+#blockquote p {
+    display: inline;
+    margin-bottom: 2rem;
+    vertical-align: super;
+}
+
+#blockquote div {
+    margin-top: 1rem;
+}
+
+#blockquote div:first-of-type:before {
+    content: "__";
+    vertical-align: super;
+    margin-right: 0.8rem;
+}
+
+#blockquote span:first-of-type:before {
+    content:"« ";
+    color: inherit;
+    font-size: 3.5rem;
+    vertical-align: inherit;
+    color: #d3b155 !important; 
+}
+
+#blockquote span:first-of-type:after {
+    content:" »";
+    color: inherit;
+    font-size: 3.5rem;
+    vertical-align: inherit;
+    color: #d3b155;
+    line-height: 1rem !important;
+}
+
+.mentions-legales {
+    font-size: 0.9rem;
+}
+
+.mentions-legales h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 400;
+    color: #d3b155;
 }
