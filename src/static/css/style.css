@@ -143,7 +143,7 @@ footer i {
     margin-right: 0.7rem;
 }
 
-.fa-linkedin-square {
+footer .fa-linkedin-square {
     font-size: 1.8rem;
     color: #fff;
 }
@@ -153,6 +153,11 @@ footer i {
 }
 
 /******** HOME ********/
+
+.fa-linkedin-square {
+    font-size: 1.8rem;
+    color: #d3b155;;
+}
 
 a > img {
     max-height: 450px;
