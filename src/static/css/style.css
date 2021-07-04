@@ -183,8 +183,9 @@ a > img {
 .flip-card {
     background-color: transparent;
     perspective: 1000px;
-    padding: 0 !important;
     height: 150px;
+    padding: .5rem !important;
+    font-weight: 600;
 }
 
 .flip-card-inner {
@@ -216,21 +217,13 @@ a > img {
 
 .flip-card-front {
     color: #d3b155;
-    background-color: #e9eaea ;
+    background-color: #F5F5F5 ;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 
 .flip-card-front  p{
     margin: 0;
-}
-
-.bg-darker {
-    background-color: #e9eaea;
-}
-
-.bg-ligther {
-    background-color: #e9eaea;
 }
 
 .flip-card-front i {
@@ -241,7 +234,7 @@ a > img {
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background-color: #e9eaea;
+    background-color: #F5F5F5;
     color: #d3b155;
     text-transform: uppercase;
     padding: 0 3rem;
