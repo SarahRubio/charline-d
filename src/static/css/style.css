@@ -43,7 +43,7 @@ body {
 header {
     z-index: 2;
     box-sizing: border-box;
-    background-image: url('../images/banner2.png');
+    background-image: url('../images/banner3.png');
     background-position: center;
     background-size: cover;
 }
@@ -99,7 +99,7 @@ nav {
     top: 0;
     z-index: 10;
     height: 7vh;
-    background-color: #6fa0cb;
+    background-color: #819ca5;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 20%);
 }
 
@@ -135,7 +135,7 @@ footer {
     padding: 3rem 5rem;
     color: #fff;
     text-align: center;
-    background-color: #6fa0cb;
+    background-color: #819ca5;
 }
 
 footer i {
