@@ -45,10 +45,11 @@ header {
     box-sizing: border-box;
     background-image: url('../images/banner2.png');
     background-position: center;
+    background-size: cover;
 }
 
 header .bignav {
-    height: 100vh;
+    height: 75vh;
 }
 
 header .bignav > div {
