@@ -323,10 +323,17 @@ a > img {
 .link {
     border: solid 1px #d3b155;
     cursor: pointer;
+    position: relative;
 }
 
 .link a, .link i {
-    color: #141821 !important;
+    color: #141821 !important;    
+}
+
+.link a {
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
 }
 
 .link:hover a,
@@ -335,9 +342,8 @@ a > img {
 }
 
 .link:hover {
-    border: solid 1px #141821;
-    background-color: #141821;
-    color: #d3b155 !important;
+    border: solid 1px #819CA5;
+    background-color: #818CA5;
     cursor: pointer;
 }
 

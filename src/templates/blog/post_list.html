@@ -15,7 +15,7 @@
                 <p><small>{{ post.date_created|date:"d F Y" }}</small></p>
                 <div class="card-text">{{ post.text|truncatechars:250|safe }}</div>
                 <p class="mt-5">
-                    <span class="link p-3"><a class="text-reset card-link" href="{% url 'article-blog' slug=post.slug %}">Lire la suite</a><i class="fas fa-arrow-right ml-2"></i></span>
+                    <span class="link py-3"><a class="text-reset card-link" href="{% url 'article-blog' slug=post.slug %}">Lire la suite <i class="fas fa-arrow-right ml-2"></i></a></span>
                 </p>
             </div>
         </div>
