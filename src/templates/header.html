@@ -1,8 +1,21 @@
 <header class="h-100">
+        <a id="togglemenu" onclick="document.body.classList.toggle('menuopen');">
+            <span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
         <div class="bignav pt-4">
             <div class="text-center">
                 <h1 class="main-title m-0">Charline Duchadeau</h1>
                 <h2 class="main-title ml-2 pb-4 mb-0 fade-in">Avocat à la Cour</h2>
+            </div>
+            <div id="menu">
+                <p><a href="{% url 'home' %}">ACCUEIL</a></p>
+                <p><a href="{% url 'competences' %}">COMPÉTENCES</a></p>
+                <p><a href="{% url 'blog' %}">ACTUALITÉS</a></p>
+                <p><a href="{% url 'contact' %}">INFOS PRATIQUES</a></p>        
             </div>
         </div>
 </header>
