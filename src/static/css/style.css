@@ -101,7 +101,7 @@ nav {
     top: 0;
     z-index: 10;
     height: 7vh;
-    background-color: #819ca5;
+    background-color: #83a9ca;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 20%);
 }
 
@@ -268,7 +268,7 @@ footer {
     padding: 3rem 5rem;
     color: #fff;
     text-align: center;
-    background-color: #819ca5;
+    background-color: #83a9ca;
 }
 
 footer i {
@@ -638,7 +638,7 @@ a > img {
     }
 
     .menuopen header {
-        background-color: #819ca5;
+        background-color: #83a9ca;
         background-image: none;
     }
 
