@@ -438,6 +438,20 @@ a > img {
     position:absolute;
 }
 
+
+@media screen and (max-width: 800px) {
+    div#access {
+        padding-left: 15px !important;
+        margin-top: 2rem;
+    }
+}
+
+.tram-station {
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+}
+
 /********************** POST  */
 
 .post {
@@ -475,8 +489,8 @@ a > img {
 }
 
 .link:hover {
-    border: solid 1px #819CA5;
-    background-color: #818CA5;
+    border: solid 1px #83a9ca;
+    background-color: #83a9ca;
     cursor: pointer;
 }
 
@@ -499,46 +513,23 @@ a > img {
     filter: grayscale(100%);
 }
 
-#blockquote span {
-    margin: 0 4rem;
-}
-
-#blockquote span:first-of-type {
-    font-size: 1.1rem;
-    font-style: italic;
-}
-
 #blockquote p {
     display: inline;
-    margin-bottom: 2rem;
-    vertical-align: super;
+    vertical-align: top;
+    font-style: oblique;
 }
 
-#blockquote div {
-    margin-top: 1rem;
-}
-
-#blockquote div:first-of-type:before {
-    content: "__";
-    vertical-align: super;
-    margin-right: 0.8rem;
-}
-
-#blockquote span:first-of-type:before {
-    content:"« ";
-    color: inherit;
-    font-size: 3.5rem;
-    vertical-align: inherit;
-    color: #d3b155 !important; 
-}
-
-#blockquote span:first-of-type:after {
-    content:" »";
-    color: inherit;
-    font-size: 3.5rem;
-    vertical-align: inherit;
+#blockquote span {
+    margin: 0;
+    font-size: 3.5rem !important;
+    vertical-align: sub;
     color: #d3b155;
     line-height: 1rem !important;
+}
+
+#blockquote div{
+    margin-top: 1.5rem;
+    font-weight: 500;
 }
 
 .mentions-legales {
@@ -626,7 +617,7 @@ a > img {
 
     #menu {
         text-align: center;
-        background-color: #819ca5d1;
+        background-color: #83a9ca;
     }
 
     #menu p {
