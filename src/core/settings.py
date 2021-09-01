@@ -19,7 +19,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'www.cduchadeau-avocats.fr']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'www.cduchadeau-avocats.fr', 'cduchadeau-avocats.fr']
 
 
 # Application definition
