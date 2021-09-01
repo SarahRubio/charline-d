@@ -17,7 +17,7 @@ PUBLIC_ROOT = BASE_DIR.parent/'public'
 SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'www.cduchadeau-avocats.fr', 'cduchadeau-avocats.fr']
 
@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+PREPEND_WWW = True
 
 ROOT_URLCONF = 'core.urls'
 
