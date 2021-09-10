@@ -72,17 +72,19 @@
         },
         "sqlparse": {
             "hashes": [
-                "sha256:017cde379adbd6a1f15a61873f43e8274179378e95ef3fede90b5aa64d304ed0",
-                "sha256:0f91fd2e829c44362cbcfab3e9ae12e22badaa8a29ad5ff599f9ec109f0454e8"
+                "sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae",
+                "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"
             ],
-            "markers": "python_version >= '3.5'",
-            "version": "==0.4.1"
+            "index": "pypi",
+            "version": "==0.4.2"
         },
         "xworkflows": {
             "hashes": [
-                "sha256:bac76b991d65cb880c671d3f577e1c949bda18bff58d6b9d692ccd2aa7792caf"
+                "sha256:8e3a9f6e9de6bcd779335f2ce4f87445ad8047771be9c6c96e347fb8622e2f27",
+                "sha256:943571904066e03946016c5710cfea97847c1931c2e07bdd61827a01bce38d80"
             ],
-            "version": "==1.0.4"
+            "markers": "python_version >= '2.7'",
+            "version": "==1.1.0"
         }
     },
     "develop": {}
