@@ -14,10 +14,10 @@ PUBLIC_ROOT = BASE_DIR.parent/'public'
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'www.cduchadeau-avocats.fr', 'cduchadeau-avocats.fr']
 
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-PREPEND_WWW = True
+PREPEND_WWW = os.environ.get("PREPEND_WWW")
 
 ROOT_URLCONF = 'core.urls'
 
