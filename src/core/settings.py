@@ -19,7 +19,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'www.cduchadeau-avocats.fr', 'cduchadeau-avocats.fr']
+ALLOWED_HOSTS = ['127.0.0.1', 'charlineduchadeau.alwaysdata.net', 'www.cduchadeau-avocats.fr', 'cduchadeau-avocats.fr']
 
 
 # Application definition
