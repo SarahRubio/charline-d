@@ -1,3 +1,5 @@
-Django~=3.1.8
+Django==4.2.13
 django-ckeditor==6.0.0
 django-model-utils==4.1.1
+django-xworkflows==1.0.0
+setuptools==70.0.0
