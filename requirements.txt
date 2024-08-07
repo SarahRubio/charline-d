@@ -1,4 +1,4 @@
-Django==4.2.13
+Django==4.2.15
 django-ckeditor==6.7.1
 django-model-utils==4.5.1
 django-xworkflows==1.0.0
