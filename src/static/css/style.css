@@ -299,7 +299,7 @@ footer .fa-linkedin-square {
     color: #fff;
 }
 
-.fa-linkedin-square:hover {
+.fa-linkedin-square:hover, .justifit-icon:hover {
     transform: scale(1.2);
 }
 
@@ -457,6 +457,11 @@ a > img {
     height: 20px;
     vertical-align: sub;
 }
+
+.justifit-icon {
+    max-height: 2em;
+    margin-left: -0.3em;
+}    
 
 /********************** POST  */
 
