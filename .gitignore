@@ -5,3 +5,4 @@ venv/
 db.sqlite3
 src/core/local.py
 public/
+.env
