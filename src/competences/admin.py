@@ -8,7 +8,7 @@ class CompetenceAdmin(admin.ModelAdmin):
     list_display = ['name']
     prepopulated_fields = {'slug': ('name',)}
     fields = [
-        'name', 'slug', 'description'
+        'name', 'slug', 'description', 'meta_title', 'meta_description'
     ]
     search_fields = ['name']
     list_filter = ['name']

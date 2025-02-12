@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
-{% block head-title %}
-<title>{{ post.title }} | Charline Duchadeau, Avocat à la cour</title>
-{% endblock %}
+{% block meta_title %}{{ post.meta_title }} - Charline Duchadeau Avocat{% endblock %}
+{% block meta_description %}{{ post.meta_description }}{% endblock %}
 
 {% block main %}
 <div class="main">

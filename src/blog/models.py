@@ -31,6 +31,19 @@ class Post(models.Model):
     text = RichTextField(
         'corps de l\'article',
         null=True, blank=True)
+    meta_title = models.CharField(
+        'Titre (balise meta)',
+        max_length=256,
+        blank=True,
+        default="",
+        help_text="Le titre qui sera affiché dans les SERP")
+    meta_description = models.CharField(
+        'Description (balise meta)',
+        max_length=256,
+        blank=True,
+        default="",
+        help_text="La description qui sera affichée dans les SERP")
+
 
     status = models.CharField(
         verbose_name='Statut',

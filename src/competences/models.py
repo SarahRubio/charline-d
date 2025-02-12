@@ -17,6 +17,18 @@ class Competence( models.Model):
     description = RichTextField(
         'Description complète de la compétence',
         null=True, blank=True)
+    meta_title = models.CharField(
+        'Titre (balise meta)',
+        max_length=256,
+        blank=True,
+        default="",
+        help_text="Le titre qui sera affiché dans les SERP")
+    meta_description = models.CharField(
+        'Description (balise meta)',
+        max_length=256,
+        blank=True,
+        default="",
+        help_text="La description qui sera affichée dans les SERP")
 
     class Meta:
         verbose_name = 'Competence'

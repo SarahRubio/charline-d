@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block head-title %}
-    <title>Charline Duchadeau, Avocat à la Cour</title>
-    {% endblock %}
-    <meta property="og:title" content="Charline Duchadeau | Avocat à la Cour" />
+    <title>{% block meta_title %}Charline Duchadeau, Avocat - Bordeaux{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Trouvez votre avocat en droit du patrimoine, de cla construction et droit des affaires à Bordeaux{% endblock meta_description %}" />
+    <meta property="og:title" content="Charline Duchadeau, Avocat - Bordeaux" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cduchadeau-avocats.fr" />
     <meta property="og:site_name" content="Charline Duchadeau" />

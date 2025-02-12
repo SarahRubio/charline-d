@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
-{% block head-title %}
-<title>{{ competence.name }} | Charline Duchadeau, Avocat à la cour</title>
-{% endblock %}
+{% block meta_title %}{{ competence.meta_title }} - Charline Duchadeau - Bordeaux{% endblock %}
+{% block meta_description %}{{ competence.meta_description }}{% endblock %}
 
 {% block main %}
 <div class="main">
