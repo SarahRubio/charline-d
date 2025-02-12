@@ -3,31 +3,18 @@ from django.utils import timezone
 from django.utils.text import slugify
 
 from model_utils import Choices
-from django_xworkflows import models as xwf_models
 
 from ckeditor.fields import RichTextField
 
 
-class PostWorkflow(xwf_models.Workflow):
-    """Defines statuses for Posts."""
+STATUS_CHOICES = Choices(
+    ('draft', 'Brouillon'),
+    ('reviewable', 'En revue'),
+    ('published', 'Publié'),
+    ('deleted', 'Supprimé'),
+)
 
-    log_model = ''
-
-    states = Choices(
-        ('draft', 'Brouillon'),
-        ('reviewable', 'En revue'),
-        ('published', 'Publié'),
-        ('deleted', 'Supprimé'),
-    )
-    initial_state = 'draft'
-    transitions = (
-        ('submit', 'draft', 'reviewable'),
-        ('publish', 'reviewable', 'published'),
-        ('unpublish', ('reviewable', 'published'), 'draft'),
-    )
-
-
-class Post(xwf_models.WorkflowEnabled, models.Model):
+class Post(models.Model):
 
     title = models.CharField(
         'Titre de l\'article',
@@ -45,9 +32,12 @@ class Post(xwf_models.WorkflowEnabled, models.Model):
         'corps de l\'article',
         null=True, blank=True)
 
-    status = xwf_models.StateField(
-        PostWorkflow,
-        verbose_name='Statut')
+    status = models.CharField(
+        verbose_name='Statut',
+        choices=STATUS_CHOICES,
+        default="draft",
+        max_length=256,
+    )
     date_created = models.DateTimeField(
         'Date de création',
         default=timezone.now)

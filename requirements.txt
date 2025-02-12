@@ -1,6 +1,5 @@
 Django==4.2.15
-django-ckeditor==6.7.1
+django-ckeditor==6.7.2
 django-model-utils==4.5.1
-django-xworkflows==1.0.0
 setuptools==70.0.0
 sqlparse==0.5.0
