@@ -9,7 +9,7 @@ class PostList(ListView):
     context_object_name = 'posts'
 
     def get_queryset(self):
-        qs = Post.objects.filter(status=STATUS_CHOICES.published)
+        qs = Post.objects.filter(status=STATUS_CHOICES.published).order_by("-date_created")
         return qs
 
 
