@@ -102,7 +102,7 @@ header .bignav > div {
     }
 }
 
-nav {
+.main-nav {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -111,7 +111,7 @@ nav {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 20%);
 }
 
-nav p{
+.main-nav p{
     display: inline-block;
     padding-right: 1rem;
     margin-right: 1rem;
@@ -120,17 +120,17 @@ nav p{
     color: #fff !important;
 }
 
-nav a {
+.main-nav a {
     color: #fff !important;
 }
 
-nav p:last-of-type {
+.main-nav p:last-of-type {
     padding-right: 0;
     margin-right: 1rem;
     border-right: none;
 }
 
-nav a:hover, a:focus {
+.main-nav a:hover, a:focus {
     text-decoration: none;
     border-bottom: solid 3px #fff;
 }
@@ -586,7 +586,7 @@ a > img {
         justify-content: space-between;
     }
 
-    nav.d-flex {
+    .main-nav.d-flex {
         display: none !important;
     }
 
@@ -657,4 +657,37 @@ a > img {
     header > .bignav > div {
         margin-top: 0;
     }
+}
+
+/* pagination */
+
+@media screen and (max-width: 800px) {
+    .big-pagination {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .small-pagination {
+        display: none;
+    }
+}
+
+.pagination {
+    margin-top: 2em;
+}
+
+.pagination > ul > li {
+    list-style: none !important;
+    padding: 0.5em;
+}
+
+.pagination > ul > li > a {
+    color: black !important;
+    background-color: none !important;
+}
+
+.pagination > ul > li > a:not([href]) {
+    color: #929292 !important;
+    cursor: not-allowed;
 }

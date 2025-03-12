@@ -7,6 +7,7 @@ from blog.models import Post, STATUS_CHOICES
 class PostList(ListView):
     template_name = 'blog/post_list.html'
     context_object_name = 'posts'
+    paginate_by = 6
 
     def get_queryset(self):
         qs = Post.objects.filter(status=STATUS_CHOICES.published).order_by("-date_created")

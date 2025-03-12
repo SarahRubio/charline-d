@@ -1,0 +1,65 @@
+<nav aria-label="Pagination" class="pagination big-pagination justify-content-center">
+    <ul class="row justify-content-around align-items-center small">
+
+        {% if page_obj.has_previous %}
+        <li>
+            <a href="?page=1" title="Première Page">|< Première Page</a>
+        </li>
+        <li>
+            <a href="?page={{ page_obj.previous_page_number }}" title="Page précédente">< Page précédente</a>
+        </li>
+        {% else %}
+        <li>
+            <a aria-disabled="true" role="link">|< Première Page</a>
+        </li>
+        <li>
+            <a aria-disabled="true" role="link">< Page précédente</a>
+        </li>
+        {% endif %}
+
+        <li>
+            Page {{ page_obj.number }} sur {{ paginator.num_pages }}
+        </li>
+
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" title="Page suivante">Page suivante ></a></li>
+        <li><a href="?page={{ page_obj.paginator.num_pages }}" title="Dernière Page">Dernière Page >|</a></li>
+        {% else %}
+        <li><a aria-disabled="true" role="link">Page suivante ></a></li>
+        <li><a aria-disabled="true" role="link">Dernière Page >|</a></li>
+        {% endif %}
+    </ul>
+  </nav>
+
+  <nav aria-label="Pagination" class="pagination small-pagination justify-content-center">
+    <ul class="row justify-content-around align-items-center small">
+
+        {% if page_obj.has_previous %}
+        <li>
+            <a href="?page=1" title="Première Page">|<</a>
+        </li>
+        <li>
+            <a href="?page={{ page_obj.previous_page_number }}" title="Page précédente"><</a>
+        </li>
+        {% else %}
+        <li>
+            <a aria-disabled="true" role="link">|<</a>
+        </li>
+        <li>
+            <a aria-disabled="true" role="link"><</a>
+        </li>
+        {% endif %}
+
+        <li>
+            Page {{ page_obj.number }} sur {{ paginator.num_pages }}
+        </li>
+
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" title="Page suivante">></a></li>
+        <li><a href="?page={{ page_obj.paginator.num_pages }}" title="Dernière Page">>|</a></li>
+        {% else %}
+        <li><a aria-disabled="true" role="link">></a></li>
+        <li><a aria-disabled="true" role="link">>|</a></li>
+        {% endif %}
+    </ul>
+  </nav>
